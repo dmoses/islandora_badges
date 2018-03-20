@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Installation hooks for Islandora Dimensions.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function islandora_dimensions_uninstall() {
+  $vars = array(
+    'islandora_dimensions_badge',
+    'islandora_dimensions_popover',
+  );
+  array_walk($vars, 'variable_del');
+}

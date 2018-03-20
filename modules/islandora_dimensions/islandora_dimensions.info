@@ -1,0 +1,5 @@
+name = Islandora Dimensions Badge
+core = 7.x
+description = Islandora Dimensions integration.
+dependencies[] = islandora_badges
+package = Islandora Tools
